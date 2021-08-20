@@ -1,0 +1,128 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "image_2020_08_26T10_54_09_894Z.png",
+            "width": 1886,
+            "height": 1163,
+            "rect_lists": [
+                {
+                    "id": 1,
+                    "image_id": 1,
+                    "text": "3333",
+                    "bbox": {
+                        "x": 205,
+                        "y": 58,
+                        "width": 147,
+                        "height": 70
+                    },
+                    "area": 10290,
+                    "zoomScale": 1
+                },
+                {
+                    "id": 2,
+                    "image_id": 1,
+                    "text": "2222",
+                    "bbox": {
+                        "x": 520,
+                        "y": 135,
+                        "width": 191,
+                        "height": 69
+                    },
+                    "area": 13179,
+                    "zoomScale": 1
+                },
+                {
+                    "id": 3,
+                    "image_id": 1,
+                    "text": "121212",
+                    "bbox": {
+                        "x": 531,
+                        "y": 290,
+                        "width": 176,
+                        "height": 99
+                    },
+                    "area": 17424,
+                    "zoomScale": 1
+                }
+            ]
+        }
+    ],
+    "annotations": [
+        {
+            "segmentation": [
+                [
+                    205,
+                    58,
+                    352,
+                    58,
+                    352,
+                    128,
+                    205,
+                    128
+                ]
+            ],
+            "id": 1,
+            "image_id": 1,
+            "area": 10290,
+            "iscrowd": 0,
+            "bbox": [
+                205,
+                58,
+                147,
+                70
+            ],
+            "text": "3333"
+        },
+        {
+            "segmentation": [
+                [
+                    520,
+                    135,
+                    711,
+                    135,
+                    711,
+                    204,
+                    520,
+                    204
+                ]
+            ],
+            "id": 2,
+            "image_id": 1,
+            "area": 13179,
+            "iscrowd": 0,
+            "bbox": [
+                520,
+                135,
+                191,
+                69
+            ],
+            "text": "2222"
+        },
+        {
+            "segmentation": [
+                [
+                    531,
+                    290,
+                    707,
+                    290,
+                    707,
+                    389,
+                    531,
+                    389
+                ]
+            ],
+            "id": 3,
+            "image_id": 1,
+            "area": 17424,
+            "iscrowd": 0,
+            "bbox": [
+                531,
+                290,
+                176,
+                99
+            ],
+            "text": "121212"
+        }
+    ]
+}

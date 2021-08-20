@@ -1,0 +1,128 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "image_2020_08_26T10_54_09_894Z.png",
+            "width": 1886,
+            "height": 1163,
+            "rect_lists": [
+                {
+                    "id": 1,
+                    "image_id": 1,
+                    "text": "vang",
+                    "bbox": {
+                        "x": 75,
+                        "y": 23,
+                        "width": 109,
+                        "height": 49
+                    },
+                    "area": 5341,
+                    "zoomScale": 1
+                },
+                {
+                    "id": 2,
+                    "image_id": 1,
+                    "text": "guard",
+                    "bbox": {
+                        "x": 246,
+                        "y": 62,
+                        "width": 91,
+                        "height": 43
+                    },
+                    "area": 3913,
+                    "zoomScale": 1
+                },
+                {
+                    "id": 3,
+                    "image_id": 1,
+                    "text": "Okay, good",
+                    "bbox": {
+                        "x": 408,
+                        "y": 72,
+                        "width": 104,
+                        "height": 56
+                    },
+                    "area": 5824,
+                    "zoomScale": 1
+                }
+            ]
+        }
+    ],
+    "annotations": [
+        {
+            "segmentation": [
+                [
+                    75,
+                    23,
+                    184,
+                    23,
+                    184,
+                    72,
+                    75,
+                    72
+                ]
+            ],
+            "id": 1,
+            "image_id": 1,
+            "area": 5341,
+            "iscrowd": 0,
+            "bbox": [
+                75,
+                23,
+                109,
+                49
+            ],
+            "text": "vang"
+        },
+        {
+            "segmentation": [
+                [
+                    246,
+                    62,
+                    337,
+                    62,
+                    337,
+                    105,
+                    246,
+                    105
+                ]
+            ],
+            "id": 2,
+            "image_id": 1,
+            "area": 3913,
+            "iscrowd": 0,
+            "bbox": [
+                246,
+                62,
+                91,
+                43
+            ],
+            "text": "guard"
+        },
+        {
+            "segmentation": [
+                [
+                    408,
+                    72,
+                    512,
+                    72,
+                    512,
+                    128,
+                    408,
+                    128
+                ]
+            ],
+            "id": 3,
+            "image_id": 1,
+            "area": 5824,
+            "iscrowd": 0,
+            "bbox": [
+                408,
+                72,
+                104,
+                56
+            ],
+            "text": "Okay, good"
+        }
+    ]
+}

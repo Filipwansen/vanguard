@@ -1,0 +1,58 @@
+<menu-dropdown>
+    
+<style>
+    .dropdown-content{
+        z-index: 4;
+    }
+    .dropdown-content > a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdown-content > a > span{
+        padding: .2em .4em .4em .4em;
+        font-size: 80%;
+    }
+    .btn-bs-file{
+        display: inline-block; color: white; cursor: pointer;
+    }
+</style>
+
+    <a href="#" onclick={saveFile} style="color: white; padding: 10px; text-decoration: none;" title="save">
+        <i class="fa fa-save" style="font-size:25px;"></i>
+    </a>    
+    <a href="#" title="Key: Ctrl + i">
+        <label class="btn-bs-file">
+            <i class="fa fa-folder-open" style="font-size:25px;"></i>
+            <input id="browse" type="file" class="filebutton" accept=".json" onchange={openFile}  style="display: none;" />            
+        </label>
+    </a>  
+
+<script>
+    this.openFile = function(e){
+        readDataFile(e);
+        //openDataFile()
+    }
+
+    this.saveFile = function(){
+        selectFileTypeToSave();
+    }
+
+    //Mapping Keyboard keys
+    this.on('mount', function(){
+
+        document.addEventListener('keydown', e => {//import
+            if ( (e.key == 'I' || e.key == 'i') && !e.shiftKey && !e.altKey && e.ctrlKey ){
+                document.getElementById('browse').click();
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            if ( (e.key == 'E' || e.key == 'e') && !e.shiftKey && !e.altKey && e.ctrlKey ){//export
+                document.getElementById('save').click();
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+        })
+    });
+</script>
+</menu-dropdown>
